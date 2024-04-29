@@ -1,0 +1,3 @@
+(() => {
+})();
+//# sourceMappingURL=game.js.map
