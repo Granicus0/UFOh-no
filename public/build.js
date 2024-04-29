@@ -1,5 +1,5 @@
 (() => {
-  // ../node_modules/kaboom/dist/kaboom.mjs
+  // node_modules/kaboom/dist/kaboom.mjs
   var Pn = Object.defineProperty;
   var fi = (s, t, c) => t in s ? Pn(s, t, { enumerable: true, configurable: true, writable: true, value: c }) : s[t] = c;
   var o = (s, t) => Pn(s, "name", { value: t, configurable: true });
@@ -3742,7 +3742,7 @@ vec4 frag(vec2 pos, vec2 uv, vec4 color, sampler2D tex) {
     return E.canvas().focus(), nt;
   }, "default");
 
-  // loaders/assetLoaders/assetLoader.js
+  // code/loaders/assetLoaders/assetLoader.js
   var assetLoader = {
     loadSprites: function() {
       loadSprite("space intro", "sprites/Background_space.png");
@@ -3791,7 +3791,7 @@ vec4 frag(vec2 pos, vec2 uv, vec4 color, sampler2D tex) {
     }
   };
 
-  // scenes/englishMenuScene.js
+  // code/scenes/englishMenuScene.js
   function englishMenuScene(gameData2) {
     scene("englishIntro", (gameData3) => {
       if (width() < 600) {
@@ -3837,7 +3837,7 @@ vec4 frag(vec2 pos, vec2 uv, vec4 color, sampler2D tex) {
     });
   }
 
-  // scenes/chineseMenuScene.js
+  // code/scenes/chineseMenuScene.js
   function chineseMenuScene() {
     scene("chineseIntro", () => {
       if (width() < 600) {
@@ -3884,7 +3884,7 @@ vec4 frag(vec2 pos, vec2 uv, vec4 color, sampler2D tex) {
     });
   }
 
-  // loaders/sceneLoaders/menuSceneLoader.js
+  // code/loaders/sceneLoaders/menuSceneLoader.js
   var menuSceneLoader = {
     loadEnglishScene: function(gameData2) {
       englishMenuScene(gameData2);
@@ -3900,7 +3900,7 @@ vec4 frag(vec2 pos, vec2 uv, vec4 color, sampler2D tex) {
     }
   };
 
-  // scenes/mainGameScene.js
+  // code/scenes/mainGameScene.js
   function mainGameScene(gameData2) {
     scene("mainGameScene", (gameData3) => {
       const player = add([
@@ -4142,7 +4142,7 @@ vec4 frag(vec2 pos, vec2 uv, vec4 color, sampler2D tex) {
     });
   }
 
-  // scenes/gameOverScene.js
+  // code/scenes/gameOverScene.js
   function gameOverScene(gameData2) {
     scene("gameover", (gameData3) => {
       if (gameData3.data.score > gameData3.data.highScore) {
@@ -4195,7 +4195,7 @@ vec4 frag(vec2 pos, vec2 uv, vec4 color, sampler2D tex) {
     });
   }
 
-  // loaders/sceneLoaders/gameSceneLoader.js
+  // code/loaders/sceneLoaders/gameSceneLoader.js
   var gameSceneLoader = {
     loadMainGameScene: function(gameData2) {
       mainGameScene(gameData2);
@@ -4211,7 +4211,7 @@ vec4 frag(vec2 pos, vec2 uv, vec4 color, sampler2D tex) {
     }
   };
 
-  // initializers/gameInitializer.js
+  // code/initializers/gameInitializer.js
   var gameInitializer = {
     initializeKaboom: function() {
       mo({ background: [0, 0, 0] });
@@ -4229,7 +4229,7 @@ vec4 frag(vec2 pos, vec2 uv, vec4 color, sampler2D tex) {
     }
   };
 
-  // gameData.js
+  // code/gameData.js
   var gameData = {
     music: {},
     sounds: {},
@@ -4247,7 +4247,7 @@ vec4 frag(vec2 pos, vec2 uv, vec4 color, sampler2D tex) {
     }
   };
 
-  // main.js
+  // code/main.js
   gameInitializer.initializeKaboom();
   assetLoader.loadSprites();
   assetLoader.loadAseprites();

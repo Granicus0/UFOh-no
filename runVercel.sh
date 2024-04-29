@@ -1,1 +1,1 @@
-esbuild main.js --bundle > build.js
+esbuild code/main.js --bundle > public/build.js
